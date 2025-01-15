@@ -20,7 +20,7 @@ public class Datatypes {
 
 // Datatypes and its sizes
 
-// --> Primitive Data Types
+// --> 1. Primitive Data Types
 
 // a. Integer (1, -1, 2,...)
 // 1. int -> 4 bytes
