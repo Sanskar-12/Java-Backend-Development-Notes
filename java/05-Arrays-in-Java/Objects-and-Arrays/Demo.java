@@ -32,8 +32,14 @@ public class Demo {
         arr[1] = s2;
         arr[2] = s3;
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i].name + " : " + arr[i].email);
+        // Using Normal For Loop
+        // for (int i = 0; i < arr.length; i++) {
+        // System.out.println(arr[i].name + " : " + arr[i].email);
+        // }
+
+        // Using For Each Loop
+        for (Student stud : arr) {
+            System.out.println(stud.name + " : " + stud.email);
         }
 
         // String arr1[] = new String[3]; // String is also the class
