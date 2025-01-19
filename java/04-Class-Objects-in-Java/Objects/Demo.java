@@ -23,3 +23,8 @@ public class Demo {
 // Object
 // With the help of objects we can access the methods and variables of that
 // class
+
+// Note:
+// ( Calculator cal ) this is we are creating reference of a variable to the
+// object
+// ( new Calculator() ) this is object creation in the heap
