@@ -32,7 +32,7 @@ class BasicCalc extends Calc { // This is a Hierarchical Inheritance Because Adv
     }
 }
 
-public class Demo {
+public class Inherit {
     public static void main(String[] args) {
         AdvCalc calc = new AdvCalc();
 

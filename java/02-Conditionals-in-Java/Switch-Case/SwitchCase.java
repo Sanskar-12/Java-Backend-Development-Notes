@@ -1,5 +1,5 @@
 
-public class Demo {
+public class SwitchCase {
     public static void main(String[] args) {
         int n = 1;
 

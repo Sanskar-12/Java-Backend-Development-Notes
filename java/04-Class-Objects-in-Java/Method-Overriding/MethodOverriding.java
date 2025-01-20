@@ -1,5 +1,5 @@
 
-class A {
+class OverridingA {
     public void show() {
         System.out.println("In A Show");
     }
@@ -9,15 +9,15 @@ class A {
     }
 }
 
-class B extends A {
+class OverridingB extends OverridingA {
     public void show() { // This is Method Overriding
         System.out.println("In B Show");
     }
 }
 
-public class Demo {
+public class MethodOverriding {
     public static void main(String[] args) {
-        B obj = new B();
+        OverridingB obj = new OverridingB();
 
         obj.show();
         obj.config();

@@ -6,7 +6,7 @@ class Student {
     String email;
 }
 
-public class Demo {
+public class ObjectAndArrays {
     public static void main(String[] args) {
         // Assigning value to the class variables
         Student s1 = new Student();

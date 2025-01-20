@@ -1,5 +1,5 @@
 
-public class Demo {
+public class Immutability {
     public static void main(String[] args) {
         String name = "Sanskar";
 

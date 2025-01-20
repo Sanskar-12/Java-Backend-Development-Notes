@@ -1,5 +1,5 @@
 
-public class Demo {
+public class OneDArray {
     public static void main(String[] args) {
         // initialise the array
         int arr[] = { 1, 2, 3, 4 };

@@ -1,5 +1,5 @@
 
-class Mobile {
+class StaticMobile {
     String brand;
     int price;
     static String name; // This variable will be same for all the objects we create
@@ -12,7 +12,7 @@ class Mobile {
     }
 
     // This Constructor will be called two times because we have created two objects
-    public Mobile() { // This is a Constructor
+    public StaticMobile() { // This is a Constructor
         brand = "Apple";
         price = 3000;
 
@@ -20,11 +20,11 @@ class Mobile {
     }
 }
 
-public class Demo {
+public class Static {
     public static void main(String[] args) throws ClassNotFoundException {
 
         // Now to call the Class without making the object
-        Class.forName("Mobile");
+        Class.forName("StaticMobile");
 
         // Mobile mob = new Mobile(); // 1st Object
         // mob.brand = "Apple";
@@ -41,7 +41,7 @@ public class Demo {
 // Constructor
 
 // Constructor will always be called if you create the Object of a class
-// It doesnt have a return type
+// It doesn't have a return type
 // It looks like a method
 
 // Static Block

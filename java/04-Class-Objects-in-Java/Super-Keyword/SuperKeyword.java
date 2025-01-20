@@ -1,31 +1,31 @@
 
-class A {
-    public A() { // Default Constructor
+class SuperA {
+    public SuperA() { // Default Constructor
         super();
         System.out.println("In A");
     }
 
-    public A(int n) { // Parameterised Constructor
+    public SuperA(int n) { // Parameterised Constructor
         super();
         System.out.println("In A int");
     }
 }
 
-class B extends A { // Inheritance ( B depends on A )
-    public B() { // Default Constructor
+class SuperB extends SuperA { // Inheritance ( B depends on A )
+    public SuperB() { // Default Constructor
         super(); // This calls the parent constructor
         System.out.println("In B");
     }
 
-    public B(int n) { // Parameterised Constructor
+    public SuperB(int n) { // Parameterised Constructor
         super(n);
         System.out.println("In B int");
     }
 }
 
-public class Demo {
+public class SuperKeyword {
     public static void main(String[] args) {
-        B obj = new B(5);
+        SuperB obj = new SuperB(5);
     }
 }
 
