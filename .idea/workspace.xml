@@ -45,15 +45,19 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/sanskar/projects/java-backend-dev/java/09-Packages-in-Java/untitled/src",
-    "last_opened_file_path": "/home/sanskar/projects/java-backend-dev/java",
+    "last_opened_file_path": "/home/sanskar/projects/java-backend-dev/java/08-OOPS-in-Java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java/08-OOPS-in-Java" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java/08-OOPS-in-Java" />
       <recent name="$PROJECT_DIR$/java/09-Packages-in-Java" />
     </key>
   </component>
