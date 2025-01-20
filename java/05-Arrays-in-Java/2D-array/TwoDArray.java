@@ -1,4 +1,4 @@
-public class Demo {
+public class TwoDArray {
     public static void main(String[] args) {
         // Intialising 2d Array
         int arr[][] = new int[3][4];

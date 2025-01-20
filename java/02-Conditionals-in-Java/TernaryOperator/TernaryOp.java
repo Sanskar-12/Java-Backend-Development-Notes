@@ -1,5 +1,5 @@
 // To Check if the number is odd or even
-public class Demo {
+public class TernaryOp {
     public static void main(String[] args) {
         int num = 10;
         String res = "";

@@ -1,5 +1,5 @@
 
-public class Demo {
+public class Strings {
     public static void main(String[] args) {
         // One way of using String is below
         // String str=new String("Sanskar");

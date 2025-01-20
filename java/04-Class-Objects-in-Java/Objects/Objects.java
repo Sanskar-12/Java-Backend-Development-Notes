@@ -7,7 +7,7 @@ class Calculator {
 
 }
 
-public class Demo {
+public class Objects {
     public static void main(String[] args) {
         Calculator cal = new Calculator(); // This is how we define an object
 

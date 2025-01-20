@@ -23,7 +23,7 @@ class B extends A { // Inheritance ( B depends on A )
     }
 }
 
-public class Demo {
+public class ThisKeyword {
     public static void main(String[] args) {
         B obj = new B(5);
     }

@@ -34,7 +34,7 @@ class Human {
 
 }
 
-public class Demo {
+public class Constructors {
     public static void main(String[] args) {
         Human human = new Human("Sanskar", 30, 30); // giving default values
 
@@ -45,6 +45,6 @@ public class Demo {
 // Constructors
 
 // look similar to Methods
-// doesnt have return type
-// used to assign deafault value to the variables when object is created
+// doesn't have return type
+// used to assign default value to the variables when object is created
 // We can also do constructor overloading

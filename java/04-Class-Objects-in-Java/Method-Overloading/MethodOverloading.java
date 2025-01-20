@@ -1,5 +1,4 @@
-
-class Calculator {
+class Calc {
     // This is mehtod overloading
     public int add(int num1, int num2) {
         return num1 + num2;
@@ -14,9 +13,9 @@ class Calculator {
     }
 }
 
-public class Demo {
+public class MethodOverloading {
     public static void main(String[] args) {
-        Calculator cal = new Calculator();
+        Calc cal = new Calc();
 
         // using first method
         int res1 = cal.add(2, 4);

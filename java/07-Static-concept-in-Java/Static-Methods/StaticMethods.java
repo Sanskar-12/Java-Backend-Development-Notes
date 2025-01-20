@@ -10,14 +10,14 @@ class Mobile {
     // System.out.println(brand + " : " + price + " : " + name );
     // }
 
-    // to use the non static variable inside static method by passing object
+    // to use the non-static variable inside static method by passing object
     // reference
     public static void phone(Mobile obj1) {
         System.out.println(obj1.brand + " : " + obj1.price + " : " + name);
     }
 }
 
-public class Demo {
+public class StaticMethods {
     public static void main(String[] args) {
         Mobile obj1 = new Mobile();
         obj1.brand = "Apple";
