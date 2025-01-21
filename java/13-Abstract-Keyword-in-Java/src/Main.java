@@ -12,7 +12,7 @@ class Dog extends Animal {
 
 public class Main {
     public static void main(String[] args) {
-        Animal obj=new Dog(); // You have to create the object of the subclass 
+        Animal obj=new Dog(); // You have to create the object of the subclass
         obj.sound();
     }
 }
