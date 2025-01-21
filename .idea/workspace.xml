@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="447c65e5-a100-4ef3-bf24-5a5867b5f142" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/04-Class-Objects-in-Java/InnerClass/src/InnerClass/InnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/04-Class-Objects-in-Java/InnerClass/src/InnerClass/InnerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/13-Abstract-Keyword-in-Java/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/13-Abstract-Keyword-in-Java/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/04-Class-Objects-in-Java/InnerClass/src/AnonymousInnerClass/AnonymousInnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/04-Class-Objects-in-Java/InnerClass/src/AnonymousInnerClass/AnonymousInnerClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +45,22 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/sanskar/projects/java-backend-dev/java/09-Packages-in-Java/untitled/src",
-    "last_opened_file_path": "/home/sanskar/projects/java-backend-dev/java/04-Class-Objects-in-Java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/sanskar/projects/java-backend-dev/java/09-Packages-in-Java/untitled/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sanskar/projects/java-backend-dev/java/04-Class-Objects-in-Java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/java/08-OOPS-in-Java" />
