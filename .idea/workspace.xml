@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447c65e5-a100-4ef3-bf24-5a5867b5f142" name="Changes" comment="" />
+    <list default="true" id="447c65e5-a100-4ef3-bf24-5a5867b5f142" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/java/14-Interfaces-in-Java/src/FunctionalInterface/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/14-Interfaces-in-Java/src/FunctionalInterface/FunctionalInterface$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/14-Interfaces-in-Java/src/FunctionalInterface/FunctionalInterface.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
