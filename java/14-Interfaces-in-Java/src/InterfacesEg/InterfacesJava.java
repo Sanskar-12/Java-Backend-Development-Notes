@@ -1,3 +1,5 @@
+package InterfacesEg;
+
 interface Computer { // This is interface
     void code();
 }
@@ -26,7 +28,7 @@ public class InterfacesJava {
         Computer desk = new Desktop(); // Here we are using dynamic dispatch which tells that which method to call will depend on the object creation not on object reference
 
         Developer dev = new Developer();
-        dev.coder(desk); // if i am passing desk it will call the code of desktop because i have created the object Desktop
+        dev.coder(desk); // if i am passing desk it will call the code of desktop because i have created the object InterfacesEg.Desktop
 
     }
 }
