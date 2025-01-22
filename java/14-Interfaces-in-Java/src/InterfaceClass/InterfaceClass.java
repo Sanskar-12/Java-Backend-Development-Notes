@@ -61,6 +61,8 @@ public class InterfaceClass {
 
 // In Interface you can extend it also
 
+// Interfaces methods doesnt have body and its usually implemented for writing company policy
+
 // Note :
 // class -- class --> extends
 // interface -- class --> implements
