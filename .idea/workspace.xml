@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="447c65e5-a100-4ef3-bf24-5a5867b5f142" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/java/10-Access-Modifiers-in-Java/src/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/10-Access-Modifiers-in-Java/src/Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
