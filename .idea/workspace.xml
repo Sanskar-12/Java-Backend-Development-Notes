@@ -26,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///usr/lib/jvm/jdk-17.0.12-oracle-x64/lib/src.zip!/java.base/java/lang/Runnable.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
