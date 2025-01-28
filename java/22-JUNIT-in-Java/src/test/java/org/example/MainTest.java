@@ -6,7 +6,10 @@ import org.junit.jupiter.api.Test;
 
 class MainTest {
     @Test
-public void test() {
-        Assertions.assertEquals("Java","Java");
-}
+    public void test() {
+        Main obj=new Main();
+        int actual=obj.divide(10,2);
+        int expectations=5;
+        Assertions.assertEquals(expectations,actual);
+    }
 }
