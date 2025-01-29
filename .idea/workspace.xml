@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="447c65e5-a100-4ef3-bf24-5a5867b5f142" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java/22-JUNIT-in-Java/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/22-JUNIT-in-Java/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/22-JUNIT-in-Java/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/22-JUNIT-in-Java/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/22-JUNIT-in-Java/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="447c65e5-a100-4ef3-bf24-5a5867b5f142" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +55,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/sanskar/projects/java-backend-dev/java/09-Packages-in-Java/untitled/src",
-    "last_opened_file_path": "/home/sanskar/projects/java-backend-dev/java",
+    "last_opened_file_path": "/home/sanskar/projects/java-backend-dev/dsa-in-java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
