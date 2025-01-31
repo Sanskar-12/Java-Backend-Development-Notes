@@ -14,6 +14,7 @@ public class BinarySearch {
         }
     }
 
+    // --> Main Logic
     public static int binarySearch(int[] arr, int target) {
         int start=0;
         int end=arr.length-1;

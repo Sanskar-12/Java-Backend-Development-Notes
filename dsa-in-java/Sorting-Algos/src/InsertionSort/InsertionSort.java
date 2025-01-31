@@ -1,6 +1,6 @@
-package BubbleSort;
+package InsertionSort;
 
-public class BubbleSort {
+public class InsertionSort {
     public static void main(String[] args) {
         int[] arr={2,1,45,23,56};
 
@@ -11,13 +11,13 @@ public class BubbleSort {
         }
 
         // --> Main Logic
-        for(int i=0;i< arr.length;i++) {
-            for(int j=0;j<arr.length-1;j++) {
-                if(arr[j] > arr[j+1]) {
-                    int temp=arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=temp;
-                }
+        for(int i=0;i<arr.length;i++) {
+            int j=i;
+            while(j>0 && arr[j-1]>arr[j]) {
+                int temp=arr[j];
+                arr[j]=arr[j-1];
+                arr[j-1]=temp;
+                j--;
             }
         }
 
@@ -31,11 +31,8 @@ public class BubbleSort {
     }
 }
 
-// Bubble Sort
+// Insertion Sort
 
-// In Bubble Sort we place i at 0 and a nested loop of j and place at 0
-// Now we compare j and j+1 and if j > j+1 then we swap
-// So the bigger number will go at the last in every iteration of i
+// In Insertion Sort we try to insert the number in its original place by comparing the current value to previous value till we find the original place of that element
 
-// Time Complexity : O(n^2)
-
+// Time Complexity : Worst Case O(n^2) and Best Case O(n)
