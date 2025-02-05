@@ -13,6 +13,9 @@ public class Main {
         // insert at index
         list.insertAt(0,14);
 
+        // delete at index
+        list.deleteAt(2);
+
         // print the linked list
         list.show();
     }
