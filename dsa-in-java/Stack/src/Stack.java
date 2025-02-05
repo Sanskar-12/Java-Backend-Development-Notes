@@ -4,17 +4,26 @@ public class Stack {
 
     // push in stack
     public void push(int data) {
-        stack[top]=data;
-        top++;
+        if(top==stack.length) {
+            System.out.println("Stack is full");
+        } else {
+            stack[top]=data;
+            top++;
+        }
     }
 
     // pop in stack
     public int pop() {
-        int data;
-        top--;
-        data=stack[top];
-        stack[top]=0;
-        return data;
+        if(top==0) {
+            System.out.println("Stack is Empty");
+            return 0;
+        } else {
+            int data;
+            top--;
+            data=stack[top];
+            stack[top]=0;
+            return data;
+        }
     }
 
     // peek in stack
@@ -22,6 +31,16 @@ public class Stack {
         int data;
         data=stack[top-1];
         return data;
+    }
+
+    // size in stack
+    public int size() {
+        return top;
+    }
+
+    // isEmpty in stack
+    public boolean isEmpty() {
+        return top<=0;
     }
 
     // show stack
