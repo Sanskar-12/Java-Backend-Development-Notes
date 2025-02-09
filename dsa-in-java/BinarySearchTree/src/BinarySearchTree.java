@@ -32,6 +32,34 @@ public class BinarySearchTree {
             inorderRecShow(root.right);
         }
     }
+
+    // Preorder Traversal
+    public void preorderShow() {
+        preorderRecShow(root);
+    }
+
+    // Preorder Traversal Recursion
+    public void preorderRecShow(Node root) {
+        if(root!=null) {
+            System.out.print(root.data + " ");
+            inorderRecShow(root.left);
+            inorderRecShow(root.right);
+        }
+    }
+
+    // Postorder Traversal
+    public void postorderShow() {
+        postorderRecShow(root);
+    }
+
+    // Postorder Traversal Recursion
+    public void postorderRecShow(Node root) {
+        if(root!=null) {
+            inorderRecShow(root.left);
+            inorderRecShow(root.right);
+            System.out.print(root.data + " ");
+        }
+    }
 }
 
 // Tree has three types of traversal
