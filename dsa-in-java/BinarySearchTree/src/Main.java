@@ -7,6 +7,7 @@ public class Main {
         b.insert(5);
         b.insert(10);
 
-        b.inorderShow();
+//        b.inorderShow();
+        b. preorderShow();
     }
 }
