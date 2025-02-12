@@ -7,7 +7,8 @@ public class Main {
         String url="jdbc:mysql://localhost:3306/Db1";
         String uname="root";
         String pass="Sanskar@123";
-        String query="select name from students where id=3";
+//        String query="select name from students where id=3";
+        String query="select * from students";
 
         Class.forName("com.mysql.cj.jdbc.Driver"); // Registering the com.mysql.jdbc.Driver
 
@@ -17,10 +18,20 @@ public class Main {
 
         ResultSet rs=st.executeQuery(query); // Execute the query
 
-        rs.next(); // The pointer will come on the next row
-        String name=rs.getString("name"); // Processing the result
+        // to fetch one row
+//        rs.next(); // The pointer will come on the next row
+//        String name=rs.getString("name"); // Processing the result
 
-        System.out.println(name);
+//        System.out.println(name);
+
+        String userData="";
+
+        // To fetch whole table
+        while(rs.next()) {
+            userData=rs.getInt(1) + " : " +rs.getString(2);
+            System.out.println(userData);
+        }
+
 
         // Closing the connections
         st.close();
