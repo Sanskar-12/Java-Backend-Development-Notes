@@ -3,9 +3,28 @@ package org.example;
 import java.sql.*; // --> Importing java.sql package
 
 public class Main {
-    public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName("com.mysql.jdbc.Driver"); // Registering the com.mysql.jdbc.Driver
+    public static void main(String[] args) throws Exception{
+        String url="jdbc:mysql://localhost:3306/Db1";
+        String uname="root";
+        String pass="Sanskar@123";
+        String query="select name from students where id=3";
 
+        Class.forName("com.mysql.cj.jdbc.Driver"); // Registering the com.mysql.jdbc.Driver
+
+        Connection con=DriverManager.getConnection(url,uname,pass); // Create a Connection to my sql
+
+        Statement st=con.createStatement(); // Create a Statement
+
+        ResultSet rs=st.executeQuery(query); // Execute the query
+
+        rs.next(); // The pointer will come on the next row
+        String name=rs.getString("name"); // Processing the result
+
+        System.out.println(name);
+
+        // Closing the connections
+        st.close();
+        con.close();
 
     }
 }
