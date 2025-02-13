@@ -1,1 +1,3 @@
-/home/sanskar/projects/java-backend-dev/java-backend/Jdbc/src/main/java/org/example/Main.java
+/home/sanskar/projects/java-backend-dev/java-backend/Jdbc/src/main/java/org/example/FetchWholeTable.java
+/home/sanskar/projects/java-backend-dev/java-backend/Jdbc/src/main/java/org/example/InsertRow.java
+/home/sanskar/projects/java-backend-dev/java-backend/Jdbc/src/main/java/org/example/FetchOneRow.java
