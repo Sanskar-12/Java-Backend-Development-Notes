@@ -1,3 +1,4 @@
 org/example/FetchOneRow.class
+org/example/DynamicValueInsert.class
 org/example/FetchWholeTable.class
 org/example/InsertRow.class
