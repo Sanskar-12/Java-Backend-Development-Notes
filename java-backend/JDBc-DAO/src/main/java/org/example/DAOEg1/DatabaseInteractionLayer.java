@@ -1,10 +1,10 @@
-package org.example;
+package org.example.DAOEg1;
 
 import java.sql.*; // 1. import java.sql.* package
 
 public class DatabaseInteractionLayer {
 
-    public DataVariablesStorageLayer getStudentName(int rollNo) throws Exception {
+    public DataVariablesStorageLayer getStudentName(int rollNo)  {
 
        try {
            String url = "jdbc:mysql://localhost:3306/Db1";

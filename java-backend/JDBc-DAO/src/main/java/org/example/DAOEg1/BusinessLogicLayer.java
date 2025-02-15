@@ -1,4 +1,4 @@
-package org.example;
+package org.example.DAOEg1;
 
 public class BusinessLogicLayer {
     public static void main(String[] args) throws Exception {
