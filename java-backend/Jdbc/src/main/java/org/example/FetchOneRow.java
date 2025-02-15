@@ -43,7 +43,7 @@ public class FetchOneRow {
 // How to use JDBC
 
 // 1. Import the package java.sql
-// 2. Load and register ( com.mysql.jdbc.Driver ) the sql connector driver ( you can either load the jar file or you can add the dependency inside pom.xml if you have maven project )
+// 2. Load and register ( com.mysql.cj.jdbc.Driver ) the sql connector driver ( you can either load the jar file or you can add the dependency inside pom.xml if you have maven project )
 // 3. Create a Connection between java application and RDBMS
 // 4. Create a statement
 // 5. Execute the query
