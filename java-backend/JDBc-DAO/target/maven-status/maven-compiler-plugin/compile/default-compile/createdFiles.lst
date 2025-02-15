@@ -1,3 +1,6 @@
-org/example/BusinessLogicLayer.class
-org/example/DataVariablesStorageLayer.class
-org/example/DatabaseInteractionLayer.class
+org/example/DAOEg2/JDBCDaoEg2.class
+org/example/DAOEg1/BusinessLogicLayer.class
+org/example/DAOEg2/Student.class
+org/example/DAOEg1/DataVariablesStorageLayer.class
+org/example/DAOEg2/StudentDao.class
+org/example/DAOEg1/DatabaseInteractionLayer.class
