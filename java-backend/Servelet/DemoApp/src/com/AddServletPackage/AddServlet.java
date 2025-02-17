@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class AddServlet extends HttpServlet {
-	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
+	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		int i = Integer.parseInt(req.getParameter("num1"));
 		int j = Integer.parseInt(req.getParameter("num2"));
 		
@@ -21,3 +21,6 @@ public class AddServlet extends HttpServlet {
 		System.out.println("The result is " + k);
 	}
 }
+
+// doPost method will handle only post request
+// doGet method will handle only get request
