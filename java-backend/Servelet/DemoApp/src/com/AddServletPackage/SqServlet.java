@@ -34,5 +34,6 @@ public class SqServlet extends HttpServlet {
 		PrintWriter out = res.getWriter();
 		
 		out.println("The result is " + k);
+		
 	}
 }
