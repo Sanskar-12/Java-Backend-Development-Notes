@@ -20,6 +20,7 @@
   	<url-pattern>/sq</url-pattern>
   </servlet-mapping>
   
+  <!-- 
   <servlet>
   	<servlet-name>context</servlet-name>
   	<servlet-class>com.ServletContextandConfig.ServletContextJava</servlet-class>
@@ -30,6 +31,14 @@
   	</init-param>
   </servlet>
   
+  <servlet-mapping>
+  	<servlet-name>context</servlet-name>
+  	<url-pattern>/ctx</url-pattern>
+  </servlet-mapping>
+  
+   -->
+  
+  <!-- 
   <servlet-mapping>
   	<servlet-name>config</servlet-name>
   	<url-pattern>/config</url-pattern>
@@ -44,11 +53,8 @@
   		<param-value>Vijay</param-value>
   	</init-param>
   </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>context</servlet-name>
-  	<url-pattern>/ctx</url-pattern>
-  </servlet-mapping>
+   -->
+ 
   
   <context-param>
   	<param-name>name</param-name>
