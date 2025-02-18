@@ -22,10 +22,14 @@ public class AddServlet extends HttpServlet {
 		
 		System.out.println("The result is " + k);
 		
-		req.setAttribute("k", k);
 		
-		RequestDispatcher rd = req.getRequestDispatcher("/sq"); // We can call another Servlet from this Servlet
-		rd.forward(req, res);
+		// Request Dispatcher
+//		req.setAttribute("k", k);
+//		RequestDispatcher rd = req.getRequestDispatcher("/sq"); // We can call another Servlet from this Servlet
+//		rd.forward(req, res);
+		
+		// URL Rewriting
+		res.sendRedirect("sq?k="+k);
 	}
 }
 
