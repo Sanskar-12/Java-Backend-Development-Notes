@@ -5,10 +5,12 @@ import java.io.PrintWriter;
 
 
 import javax.servlet.ServletContext;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@WebServlet("/ctx") // --> This defines that if someone request on ctx url then it should got to this Servlet
 public class ServletContextJava extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		PrintWriter out = res.getWriter();
