@@ -19,4 +19,44 @@
   	<servlet-name>square</servlet-name>
   	<url-pattern>/sq</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>context</servlet-name>
+  	<servlet-class>com.ServletContextandConfig.ServletContextJava</servlet-class>
+  	
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Vijay</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>config</servlet-name>
+  	<url-pattern>/config</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>config</servlet-name>
+  	<servlet-class>com.ServletContextandConfig.ServletConfigJava</servlet-class>
+  	
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Vijay</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>context</servlet-name>
+  	<url-pattern>/ctx</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Sanskar</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>phone</param-name>
+  	<param-value>Redmi</param-value>
+  </context-param>
 </web-app>
