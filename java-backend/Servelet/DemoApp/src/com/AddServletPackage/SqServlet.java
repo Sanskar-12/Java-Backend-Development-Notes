@@ -3,6 +3,7 @@ package com.AddServletPackage;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,9 +16,18 @@ public class SqServlet extends HttpServlet {
 		
 //		int k = Integer.parseInt(req.getParameter("k"));
 
-		HttpSession session = req.getSession();
-		int k = (int) session.getAttribute("k");
+//		HttpSession session = req.getSession();
+//		int k = (int) session.getAttribute("k");
 		
+		Cookie[] cookie = req.getCookies();
+		
+		int k = 0;
+		
+		for(Cookie c : cookie) {
+			if(c.getName().equals("k")) {
+				k = Integer.parseInt(c.getValue());
+			}
+		}
 		
 		k = k*k;
 		
