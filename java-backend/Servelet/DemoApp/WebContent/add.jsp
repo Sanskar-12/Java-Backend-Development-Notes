@@ -14,16 +14,16 @@ int c = 3;
 %>
 
 	<% // --> this is Scriptlet tag
-	int i = Integer.parseInt(request.getParameter("num1"));
-	int j = Integer.parseInt(request.getParameter("num2"));
-	
-	int k = i+j;
-	
-	out.println("Output : "+k);
+		int i = Integer.parseInt(request.getParameter("num1"));
+		int j = Integer.parseInt(request.getParameter("num2"));
+		
+		int k = i+j;
+		
+		out.println("Output : "+k);
 	%>
 	
 	<%= // This is Expression tag this will convert all the expression to out.println
-	c
+		c
 	%>
 </body>
 </html>
