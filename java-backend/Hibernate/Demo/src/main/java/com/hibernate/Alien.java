@@ -10,6 +10,13 @@ public class Alien { // POJO
 	private int aid;
 	private String aname;
 	private String acolor;
+	private String aemail;
+	public String getAemail() {
+		return aemail;
+	}
+	public void setAemail(String aemail) {
+		this.aemail = aemail;
+	}
 	public int getAid() {
 		return aid;
 	}
