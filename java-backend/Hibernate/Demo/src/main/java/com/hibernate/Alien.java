@@ -1,6 +1,12 @@
 package com.hibernate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Alien { // POJO
+	
+	@Id
 	private int aid;
 	private String aname;
 	private String acolor;
