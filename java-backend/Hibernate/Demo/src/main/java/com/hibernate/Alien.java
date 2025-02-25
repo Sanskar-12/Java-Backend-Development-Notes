@@ -13,11 +13,7 @@ public class Alien { // POJO
 	@Id
 	private int aid;
 	//@Transient // To remove a temporary column
-	private String aname;
-	@Override
-	public String toString() {
-		return "Alien [aid=" + aid + ", aname=" + aname + ", acolor=" + acolor + ", aemail=" + aemail + "]";
-	}
+	private AlienName aname;
 	//@Column(name="aliencolor") // iF we have to put a different column name
 	private String acolor;
 	private String aemail;
@@ -33,10 +29,11 @@ public class Alien { // POJO
 	public void setAid(int aid) {
 		this.aid = aid;
 	}
-	public String getAname() {
+	
+	public AlienName getAname() {
 		return aname;
 	}
-	public void setAname(String aname) {
+	public void setAname(AlienName aname) {
 		this.aname = aname;
 	}
 	public String getAcolor() {
@@ -46,5 +43,10 @@ public class Alien { // POJO
 		this.acolor = acolor;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Alien [aid=" + aid + ", aname=" + aname + ", acolor=" + acolor + ", aemail=" + aemail + "]";
+	}
 	
 }
