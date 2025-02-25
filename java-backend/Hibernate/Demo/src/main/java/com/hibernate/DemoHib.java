@@ -6,13 +6,12 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class DemoHib {
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		Alien telusko = new Alien();
-		telusko.setAid(2);
-		telusko.setAname("Vijay123");
-		telusko.setAcolor("blue");
-		telusko.setAemail("vijay@gmail.com");
+		telusko.setAid(4);
+		telusko.setAname("Ishu");
+		telusko.setAcolor("red");
+		telusko.setAemail("ishu@gmail.com");
 		
 		Configuration config = new Configuration().configure().addAnnotatedClass(Alien.class);
 		
@@ -22,7 +21,7 @@ public class DemoHib {
 		
 		Transaction tx = session.beginTransaction();
 		
-		session.save(telusko);
+		session.persist(telusko);
 		
 		tx.commit();
 	}
