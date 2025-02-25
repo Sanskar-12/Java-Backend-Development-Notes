@@ -1,14 +1,20 @@
 package com.hibernate;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
+@Table(name="alientable") // If we have to put a different table name
 public class Alien { // POJO
 	
 	@Id
 	private int aid;
+	@Transient // To remove a temporary column
 	private String aname;
+	@Column(name="aliencolor") // iF we have to put a different column name
 	private String acolor;
 	private String aemail;
 	public String getAemail() {
