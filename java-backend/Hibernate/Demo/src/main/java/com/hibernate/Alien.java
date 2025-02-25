@@ -7,14 +7,18 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 
 @Entity
-@Table(name="alientable") // If we have to put a different table name
+//@Table(name="alientable") // If we have to put a different table name
 public class Alien { // POJO
 	
 	@Id
 	private int aid;
-	@Transient // To remove a temporary column
+	//@Transient // To remove a temporary column
 	private String aname;
-	@Column(name="aliencolor") // iF we have to put a different column name
+	@Override
+	public String toString() {
+		return "Alien [aid=" + aid + ", aname=" + aname + ", acolor=" + acolor + ", aemail=" + aemail + "]";
+	}
+	//@Column(name="aliencolor") // iF we have to put a different column name
 	private String acolor;
 	private String aemail;
 	public String getAemail() {
