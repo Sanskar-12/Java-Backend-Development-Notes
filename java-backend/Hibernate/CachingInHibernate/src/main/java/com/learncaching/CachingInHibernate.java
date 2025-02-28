@@ -18,15 +18,25 @@ public class CachingInHibernate {
 		
 		SessionFactory sf = config.buildSessionFactory();
 		
-		Session session = sf.openSession();
+		Session session1 = sf.openSession();
 		
-		Transaction tx = session.beginTransaction();
+		Transaction tx = session1.beginTransaction();
 		
-		a = (Alien) session.get(Alien.class, 101); // by default hibernate provides first level cache
+		a = (Alien) session1.get(Alien.class, 101); // by default hibernate provides first level cache
 		
 		System.out.println(a);
 		
 		tx.commit();
+		
+		Session session2 = sf.openSession();
+		
+		Transaction tx2 = session2.beginTransaction();
+		
+		a = (Alien) session2.get(Alien.class, 101); // by default hibernate provides first level cache
+		
+		System.out.println(a);
+		
+		tx2.commit();
 		
 	}
 }
@@ -44,3 +54,8 @@ public class CachingInHibernate {
 //Works at the SessionFactory level.
 //Shared across multiple sessions.
 //Requires third-party providers like Ehcache, Infinispan.
+
+// Configuration for Second level cache
+// 1. Add ehcache and hibernate-ehcache dependencies inside pom.xml
+// 2. Add properties inside hibernate.cfg.xml
+// 3. Make Entity Cacheable and Cache
