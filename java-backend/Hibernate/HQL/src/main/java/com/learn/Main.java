@@ -1,5 +1,6 @@
 package com.learn;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -31,8 +32,22 @@ public class Main {
 		
 		// To fetch all the values from the database using HQL
 //		Query<Student> q = session.createQuery("from Student",Student.class); --> HQL Query to fetch all the students
+		
 //		Query<Student> q = session.createQuery("from Student where marks > 50",Student.class); --> HQL Query to fetch students with marks > 50
-		Query<Student> q = session.createQuery("from Student where rollno = 3",Student.class); //--> HQL Query to fetch single student with rollno = 3
+		
+//		Query<Student> q = session.createQuery("from Student where rollno = 3",Student.class); // --> HQL Query to fetch single student with rollno = 3
+		
+//		Query<Object[]> q = session.createQuery(
+//			    "Select name, rollno, marks from Student where rollno = 3", 
+//			    Object[].class
+//			); // --> Query to fetch the specific columns from the table using where
+		
+		int marks = 20;
+		
+		Query<Object[]> q = session.createQuery("Select name, rollno, marks from Student where marks > :marks",Object[].class); // --> Query to fetch the List of Students with specific columns with prepared statement
+		
+		q.setParameter("marks", marks);
+		
 		
 //		List<Student> student = q.list();
 		
@@ -40,8 +55,19 @@ public class Main {
 //			System.out.println(s);
 //		}
 		
-		Student student = q.uniqueResult(); // TO get single result
-		System.out.println(student);
+//		Student student = q.uniqueResult(); // TO get single result
+//		System.out.println(student);
+		
+//		Object[] s = (Object[]) q.uniqueResult(); // To fetch the specific columns from the table
+//		for(Object student : s) {
+//			System.out.println(student);
+//		}
+		
+		List<Object[]> students = q.list();
+		
+		for (Object[] student : students) {
+		    System.out.println(Arrays.toString(student));  // Properly formats array output
+		}
 		
 		tx.commit();
 	}
