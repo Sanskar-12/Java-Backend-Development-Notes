@@ -30,12 +30,18 @@ public class Main {
 //		}
 		
 		// To fetch all the values from the database using HQL
-		Query<Student> q = session.createQuery("from Student",Student.class);
-		List<Student> student = q.list();
+//		Query<Student> q = session.createQuery("from Student",Student.class); --> HQL Query to fetch all the students
+//		Query<Student> q = session.createQuery("from Student where marks > 50",Student.class); --> HQL Query to fetch students with marks > 50
+		Query<Student> q = session.createQuery("from Student where rollno = 3",Student.class); //--> HQL Query to fetch single student with rollno = 3
 		
-		for(Student s : student) {
-			System.out.println(s);
-		}
+//		List<Student> student = q.list();
+		
+//		for(Student s : student) {
+//			System.out.println(s);
+//		}
+		
+		Student student = q.uniqueResult(); // TO get single result
+		System.out.println(student);
 		
 		tx.commit();
 	}
