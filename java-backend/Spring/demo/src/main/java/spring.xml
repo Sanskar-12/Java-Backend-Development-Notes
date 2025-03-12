@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="com.learn.demo.Alien"/>
+    <bean id="alien" class="com.learn.demo.Alien" scope="prototype"></bean>
 </beans>
