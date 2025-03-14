@@ -5,7 +5,8 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien" class="com.learn.Alien">
-    	<property name="age" value="10"></property> 
+    	<!-- <constructor-arg value="11"></constructor-arg> --> <!--This is Constructor injection-->
+    	<property name="age" value="10"></property>  <!--This is Setter injection-->
     	<property name="laptop" ref="laptop"></property>
     </bean>
     
