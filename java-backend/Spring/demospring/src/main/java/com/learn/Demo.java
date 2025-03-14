@@ -12,6 +12,9 @@ public class Demo {
 		Alien obj1 = (Alien)factory.getBean("alien");
         
         System.out.println(obj1.getAge());
+        
+        obj1.run();
+
 	}
 }
 

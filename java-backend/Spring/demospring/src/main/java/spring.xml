@@ -4,11 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="com.learn.Alien">
-    	<property name="age" value="10"></property> 
-    	<property name="laptop" ref="laptop"></property>
+    <bean id="alien" class="com.learn.Alien" autowire="byName"> <!-- Autowire ByName means if the variable name is com then it will relate to the bean which is same as com -->
+    	<!-- <constructor-arg value="11"></constructor-arg> --> <!--This is Constructor injection-->
+    	<property name="age" value="10"></property>  <!--This is Setter injection-->
+    	<!-- <property name="laptop" ref="laptop"></property> -->
     </bean>
     
-    <bean id="laptop" class="com.learn.Laptop">
+    <bean id="com" class="com.learn.Laptop">
+    </bean>
+    
+    <bean id="desktop" class="com.learn.Desktop">
     </bean>
 </beans>
