@@ -20,8 +20,8 @@ public class SpringJdbcDemoApplication {
 
 		AlienRepo repo = context.getBean(AlienRepo.class);
 
-		repo.save(alien1);
-		repo.getAll();
+//		repo.save(alien1);
+		System.out.println(repo.getAll());
 
 	}
 
