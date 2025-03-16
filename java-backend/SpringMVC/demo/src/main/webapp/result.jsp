@@ -6,6 +6,6 @@
     <title>JSP Starter Page</title>
 </head>
 <body>
-   Result is : 
+   Result is : ${num3}
 </body>
 </html>
