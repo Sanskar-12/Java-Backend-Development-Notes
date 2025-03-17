@@ -14,7 +14,7 @@ public class HomeController {
 	
 	@GetMapping("/")
 	public String home() {
-		return "index.jsp";
+		return "index";
 	}
 	
 	@RequestMapping("add") // here the request is mapped to add then it will call result.jsp
@@ -22,7 +22,7 @@ public class HomeController {
 		
 		ModelAndView mv = new ModelAndView();
 		
-		mv.setViewName("result.jsp");
+		mv.setViewName("result");
 		
 		int num3 = i+j;
 		mv.addObject("num3", num3);
