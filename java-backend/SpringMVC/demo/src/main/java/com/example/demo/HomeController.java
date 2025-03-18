@@ -16,6 +16,11 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 public class HomeController {
 	
+	@ModelAttribute // If i am making this as ModelAttribute then this function is called first before any other function
+	public void modelData(Model m) {
+		m.addAttribute("name","Aliens");
+	}
+	
 	@GetMapping("/")
 	public String home() {
 		return "index";
