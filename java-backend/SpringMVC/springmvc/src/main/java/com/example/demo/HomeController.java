@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.model.Alien;
 
-import jakarta.servlet.http.HttpSession;
+
 
 
 @Controller
