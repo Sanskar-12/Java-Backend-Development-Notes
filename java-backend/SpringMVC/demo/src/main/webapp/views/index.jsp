@@ -7,11 +7,20 @@
 </head>
 <body>
     Welcome to Calculator
-	
-	<form action="add"> <!-- when form will get submitted it will call add page request -->
+	<!--
+		
+	<form action="add"> when form will get submitted it will call add page request 
 		Enter num1 : <input type="text" name="num1"/> <br/>
 		Enter num2 : <input type="text" name="num2"/> <br/>
 		<input type="submit"/>
 	</form>
+		
+	-->
+	
+	<form action="addAlien"> <!-- when form will get submitted it will call add page request -->
+			Enter the Id : <input type="text" name="aid"/> <br/>
+			Enter the name : <input type="text" name="aname"/> <br/>
+			<input type="submit"/>
+		</form>
 </body>
 </html>

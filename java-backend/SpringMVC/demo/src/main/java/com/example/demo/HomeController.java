@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.model.Alien;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -40,5 +41,17 @@ public class HomeController {
 		return "result";
 		
 		
+	}
+	
+	@RequestMapping("addAlien")
+	public String addAlien(@RequestParam("aid") int aid,@RequestParam("aname") String aname,Model m) {
+		
+		Alien a = new Alien();
+		a.setAid(aid);
+		a.setAname(aname);
+		
+		m.addAttribute("alien",a);
+		
+		return "result";
 	}
 }
