@@ -17,17 +17,22 @@
 		
 	-->
 	
-	<!--
+
 		
-	<form action="addAlien" method="post">  when form will get submitted it will call add page request 
+	<form action="addAlien" method="post">  <!--when form will get submitted it will call add page request -->
 			Enter the Id : <input type="text" name="aid"/> <br/>
 			Enter the name : <input type="text" name="aname"/> <br/>
 			<input type="submit"/>
 		</form>
 		
-	-->
-		
+
+	
 	<form action="getAlien" method="get">
+		<input type="text" name="aid"/><br/>
+		<input type="submit"/>
+	</form>
+		
+	<form action="getAliens" method="get">
 		<input type="submit"/>
 	</form>
 		

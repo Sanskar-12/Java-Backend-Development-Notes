@@ -3,6 +3,7 @@ package com.example.demo;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,9 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class HomeController {
+	
+	@Autowired
+	AlienRepo repo;
 	
 	@ModelAttribute // If i am making this as ModelAttribute then this function is called first before any other function
 	public void modelData(Model m) {
@@ -61,15 +65,25 @@ public class HomeController {
 //		a.setAname(aname);
 //		
 //		m.addAttribute("alien",a);
-//		
+
+		repo.save(a); // save came from jpa
+		
 		return "result";
 	}
 	
-	@GetMapping("getAlien") // Only supports get method
-	public String getAliens(Model m) {
-		List<Alien> list = Arrays.<Alien>asList(new Alien(1, "Sanskar"), new Alien(2, "Vijay"));
+	@GetMapping("getAlien")
+	public String getAlien(int aid,Model m) {
 		
-		m.addAttribute("result",list);
+		m.addAttribute("alienid",repo.getOne(aid)); // getOne came from jpa
+		
+		return "showAliens";
+	}
+	
+	@GetMapping("getAliens") // Only supports get method
+	public String getAliens(Model m) {
+//		List<Alien> list = Arrays.<Alien>asList(new Alien(1, "Sanskar"), new Alien(2, "Vijay"));
+		
+		m.addAttribute("result",repo.findAll()); // findAll came from jpa respository
 		
 		return "showAliens";
 	}

@@ -7,7 +7,11 @@
 </head>
 <body>
    
-   Result is : ${result} <br>
+	Result for alien : ${alienid}<br>
+	
+   Result for aliens : ${result} <br>
+   
+   
    
 </body>
 </html>
