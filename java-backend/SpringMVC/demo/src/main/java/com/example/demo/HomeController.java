@@ -69,7 +69,15 @@ public class HomeController {
 		return "result";
 	}
 	
-	@GetMapping("getAlien") // Only supports get method
+	@GetMapping("getAlien")
+	public String getAlien(int aid,Model m) {
+		
+		m.addAttribute("alienid",repo.getOne(aid));
+		
+		return "showAliens";
+	}
+	
+	@GetMapping("getAliens") // Only supports get method
 	public String getAliens(Model m) {
 //		List<Alien> list = Arrays.<Alien>asList(new Alien(1, "Sanskar"), new Alien(2, "Vijay"));
 		

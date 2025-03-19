@@ -26,8 +26,13 @@
 		</form>
 		
 	-->
-		
+	
 	<form action="getAlien" method="get">
+		<input type="text" name="aid"/><br/>
+		<input type="submit"/>
+	</form>
+		
+	<form action="getAliens" method="get">
 		<input type="submit"/>
 	</form>
 		
