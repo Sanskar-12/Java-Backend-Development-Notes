@@ -65,14 +65,16 @@ public class HomeController {
 //		a.setAname(aname);
 //		
 //		m.addAttribute("alien",a);
-//		
+
+		repo.save(a); // save came from jpa
+		
 		return "result";
 	}
 	
 	@GetMapping("getAlien")
 	public String getAlien(int aid,Model m) {
 		
-		m.addAttribute("alienid",repo.getOne(aid));
+		m.addAttribute("alienid",repo.getOne(aid)); // getOne came from jpa
 		
 		return "showAliens";
 	}
