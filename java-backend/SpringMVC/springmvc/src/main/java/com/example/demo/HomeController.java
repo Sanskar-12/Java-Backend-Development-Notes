@@ -12,7 +12,6 @@ import com.example.model.Alien;
 
 
 
-
 @Controller
 public class HomeController {
 	
