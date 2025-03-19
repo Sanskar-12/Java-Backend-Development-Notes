@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -60,5 +63,14 @@ public class HomeController {
 //		m.addAttribute("alien",a);
 //		
 		return "result";
+	}
+	
+	@GetMapping("getAlien") // Only supports get method
+	public String getAliens(Model m) {
+		List<Alien> list = Arrays.<Alien>asList(new Alien(1, "Sanskar"), new Alien(2, "Vijay"));
+		
+		m.addAttribute("result",list);
+		
+		return "showAliens";
 	}
 }
