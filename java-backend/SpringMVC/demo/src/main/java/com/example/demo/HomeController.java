@@ -87,4 +87,12 @@ public class HomeController {
 		
 		return "showAliens";
 	}
+	
+	@GetMapping("getAlienByAname")
+	public String getAlienByAname(String aname, Model m) {
+		//m.addAttribute("result",repo.findByAname(aname)); // get by name 
+		m.addAttribute("result",repo.find(aname)); // get by name 
+
+		return "showAliens";
+	}
 }

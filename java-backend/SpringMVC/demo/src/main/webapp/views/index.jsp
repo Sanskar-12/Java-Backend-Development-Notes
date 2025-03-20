@@ -20,10 +20,10 @@
 
 		
 	<form action="addAlien" method="post">  <!--when form will get submitted it will call add page request -->
-			Enter the Id : <input type="text" name="aid"/> <br/>
-			Enter the name : <input type="text" name="aname"/> <br/>
-			<input type="submit"/>
-		</form>
+		Enter the Id : <input type="text" name="aid"/> <br/>
+		Enter the name : <input type="text" name="aname"/> <br/>
+		<input type="submit"/>
+	</form>
 		
 
 	
@@ -36,5 +36,10 @@
 		<input type="submit"/>
 	</form>
 		
+	<form action="getAlienByAname" method="get">
+		Enter the Name : <input type="text" name="aname"/> <br/>
+		<input type="submit"/>
+	</form>
+			
 </body>
 </html>
