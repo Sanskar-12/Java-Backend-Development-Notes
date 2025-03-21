@@ -17,7 +17,7 @@ public class AlienController {
 	@Autowired
 	AlienRepo repo;
 	
-	@GetMapping("aliens")
+	@GetMapping(path="aliens",produces = "application/xml") // It will only give response in xml
 	@ResponseBody // Converts into json
 	public List<Alien> getAllALiens() {
 		List<Alien> aliens = repo.findAll();
