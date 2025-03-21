@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.model.Alien;
@@ -34,9 +35,10 @@ public class AlienController {
 		return alien;
 	}
 	
-	@PostMapping("alien") // post 
+	 // post
+	@PostMapping(path="alien",consumes = "application/json") // only take request in json
 	@ResponseBody
-	public Alien saveAlien(Alien a) {
+	public Alien saveAlien(@RequestBody Alien a) { // Takes value in raw json format
 		repo.save(a);
 		
 		return a;
