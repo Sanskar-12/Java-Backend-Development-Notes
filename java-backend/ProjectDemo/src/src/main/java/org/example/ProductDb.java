@@ -1,9 +1,8 @@
 package org.example;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 // ProductDb will do database logic
 public class ProductDb {
@@ -33,5 +32,28 @@ public class ProductDb {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public List<Product> getProducts() {
+        List<Product> list = new ArrayList<>();
+        String query = "select name, type, place, warranty from product";
+        try {
+            PreparedStatement st = conn.prepareStatement(query);
+            ResultSet rs = st.executeQuery();
+
+            while(rs.next()) {
+                Product p = new Product();
+                p.setName(rs.getString(1));
+                p.setType(rs.getString(2));
+                p.setPlace(rs.getString(3));
+                p.setWarranty(rs.getInt(4));
+
+                list.add(p);
+            }
+
+            return list;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
