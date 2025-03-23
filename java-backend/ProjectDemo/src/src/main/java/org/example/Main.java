@@ -10,17 +10,17 @@ public class Main {
         ProductService service = new ProductService();
 
         // Product Service to add the product
-        service.addProduct(new Product("Dell","Laptop","Black Table",2020));
-        service.addProduct(new Product("Logi","Black Mouse","Table",2020));
-        service.addProduct(new Product("Samsung","Phone","White Table",2020));
-        service.addProduct(new Product("Earphone","Black wire","Kitchen",2020));
+//        service.addProduct(new Product("Dell","Laptop","Black Table",2020));
+//        service.addProduct(new Product("Logi","Black Mouse","Table",2020));
+//        service.addProduct(new Product("Samsung","Phone","White Table",2020));
+//        service.addProduct(new Product("Earphone","Black wire","Kitchen",2020));
 
 
         // Get all the products
-//        List<Product> products = service.getAllProducts();
-//        for(Product p : products) {
-//            System.out.println(p);
-//        }
+        List<Product> products = service.getAllProducts();
+        for(Product p : products) {
+            System.out.println(p);
+        }
 
         // Get one product
 //        Product product = service.getOneProduct("Dell");
