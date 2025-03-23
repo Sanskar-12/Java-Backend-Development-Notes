@@ -3,12 +3,17 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
+// Product Service will do application logic
 public class ProductService {
 
     List<Product> list = new ArrayList<>();
 
+    ProductDb db = new ProductDb();
+
     public void addProduct(Product p) {
-        list.add(p);
+//        list.add(p);
+
+        db.save(p);
     }
 
     public List<Product> getAllProducts() {

@@ -1,5 +1,6 @@
 package org.example;
 
+// Product is schema
 public class Product {
     private String name;
     private String type;
