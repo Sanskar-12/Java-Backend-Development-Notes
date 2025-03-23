@@ -3,6 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
+// Main will be the entry point and will call Product Service for its work
 public class Main {
     public static void main(String[] args) {
 
