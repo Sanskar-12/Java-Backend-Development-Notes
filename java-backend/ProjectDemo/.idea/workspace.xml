@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e0175f-440e-4607-a6b5-1c0e8f08d287" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ProductSpring/src/main/java/com/example/ProductSpring/ProductSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductSpring/src/main/java/com/example/ProductSpring/ProductSpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProductSpring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductSpring/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="00e0175f-440e-4607-a6b5-1c0e8f08d287" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
