@@ -26,15 +26,9 @@ public class ProductService {
        return db.findAll();
     }
 
-//    public Product getOneProduct(String name) {
-//        for(Product p : list) {
-//            if(p.getName().equals(name)) {
-//                return p;
-//            }
-//        }
-//
-//        return null;
-//    }
+    public Product getOneProduct(String name) {
+        return db.findByName(name);
+    }
 //
 //    public List<Product> getProductWithText(String text) {
 //        String lowerCaseText = text.toLowerCase();
