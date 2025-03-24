@@ -15,12 +15,12 @@ public class ProductService {
 
     List<Product> list = new ArrayList<>();
 
-//
-//    public void addProduct(Product p) {
-////        list.add(p);
-//
-//        db.save(p);
-//    }
+
+    public void addProduct(Product p) {
+//        list.add(p);
+
+        db.save(p);
+    }
 
     public List<Product> getAllProducts() {
        return db.findAll();
