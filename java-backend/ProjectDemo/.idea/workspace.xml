@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e0175f-440e-4607-a6b5-1c0e8f08d287" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ProductSpring/src/main/java/com/example/ProductSpring/ProductSpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductSpring/src/main/java/com/example/ProductSpring/ProductSpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProductSpring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductSpring/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +47,8 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/sanskar/projects/java-backend-dev/java-backend/ProductSpring",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.23822714",
+    "project.structure.side.proportion": "0.34347826",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
