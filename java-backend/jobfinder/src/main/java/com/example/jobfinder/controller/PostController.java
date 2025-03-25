@@ -1,12 +1,10 @@
 package com.example.jobfinder.controller;
 
-import com.example.jobfinder.PostRepository;
 import com.example.jobfinder.model.Post;
+import com.example.jobfinder.repository.PostRepository;
+import com.example.jobfinder.repository.SearchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,6 +14,9 @@ public class PostController {
     @Autowired
     PostRepository repo;
 
+    @Autowired
+    SearchRepository srepo;
+
     @PostMapping("/post")
     public Post savePosts(@RequestBody Post p) {
         return repo.save(p);
@@ -24,5 +25,10 @@ public class PostController {
     @GetMapping("/posts")
     public List<Post> getAllPosts() {
         return repo.findAll();
+    }
+
+    @GetMapping("/search/{text}")
+    public List<Post> searchPosts(@PathVariable String text) {
+        return srepo.findByText(text);
     }
 }
