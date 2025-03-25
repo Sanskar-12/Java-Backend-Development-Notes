@@ -7,6 +7,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.convert.MongoConverter;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -18,6 +19,9 @@ public class SearchImpl implements SearchRepository {
 
     @Autowired
     MongoClient mongoClient;
+
+    @Autowired
+    MongoConverter converter;
 
     @Override
     public List<Post> findByText(String text) {
@@ -34,6 +38,8 @@ public class SearchImpl implements SearchRepository {
                 new Document("$sort",
                         new Document("exp", 1L)),
                 new Document("$limit", 10L)));
+
+        result.forEach(document -> list.add(converter.read(Post.class, document)));
 
         return list;
     }
